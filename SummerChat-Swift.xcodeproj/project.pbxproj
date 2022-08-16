@@ -62,13 +62,10 @@
 		C45BA3EF28ABCA9300D57EB5 /* SummerChat-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				C4B7CABE28ABCC74002C68EE /* Models */,
 				C45BA40428ABCAE000D57EB5 /* Controller */,
-				C45BA3F028ABCA9300D57EB5 /* AppDelegate.swift */,
-				C45BA3F228ABCA9300D57EB5 /* SceneDelegate.swift */,
-				C45BA3F628ABCA9300D57EB5 /* Main.storyboard */,
-				C45BA3F928ABCA9500D57EB5 /* Assets.xcassets */,
-				C45BA3FB28ABCA9500D57EB5 /* LaunchScreen.storyboard */,
-				C45BA3FE28ABCA9500D57EB5 /* Info.plist */,
+				C4B7CABD28ABCC64002C68EE /* Views */,
+				C4B7CAC028ABCE7D002C68EE /* Files */,
 			);
 			path = "SummerChat-Swift";
 			sourceTree = "<group>";
@@ -82,6 +79,33 @@
 				C45BA40B28ABCB1C00D57EB5 /* ChatViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		C4B7CABD28ABCC64002C68EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C45BA3F628ABCA9300D57EB5 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4B7CABE28ABCC74002C68EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C4B7CAC028ABCE7D002C68EE /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				C45BA3F028ABCA9300D57EB5 /* AppDelegate.swift */,
+				C45BA3F228ABCA9300D57EB5 /* SceneDelegate.swift */,
+				C45BA3FB28ABCA9500D57EB5 /* LaunchScreen.storyboard */,
+				C45BA3F928ABCA9500D57EB5 /* Assets.xcassets */,
+				C45BA3FE28ABCA9500D57EB5 /* Info.plist */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

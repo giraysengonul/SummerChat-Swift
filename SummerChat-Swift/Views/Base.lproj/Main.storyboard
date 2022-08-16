@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4BX-AO-h6W">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WelcomeView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="WelcomeView" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="SummerChat_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="St6-Ql-rYb">
+                                <rect key="frame" x="87" y="414.5" width="240" height="121"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rMZ-gx-Hq0">
+                                <rect key="frame" x="8" y="744" width="398" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSu-Lk-hbO">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="z6E-my-g8f"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Register">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Veh-Op-hYs" kind="show" id="9Qh-Sl-Fo9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVb-jz-zoK">
+                                        <rect key="frame" x="0.0" y="70" width="398" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Log In">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="KNN-3k-iVL" kind="show" id="EDz-qC-Wsv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rMZ-gx-Hq0" secondAttribute="bottom" constant="32" id="0ju-CX-cdd"/>
+                            <constraint firstItem="St6-Ql-rYb" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.57971" id="7tt-a0-qub"/>
+                            <constraint firstItem="St6-Ql-rYb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9zl-IY-KBA"/>
+                            <constraint firstItem="rMZ-gx-Hq0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Hsp-D8-QOV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rMZ-gx-Hq0" secondAttribute="trailing" constant="8" id="gXS-vf-D9v"/>
+                            <constraint firstItem="St6-Ql-rYb" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.156479" id="l0U-Q9-xlp"/>
+                            <constraint firstItem="St6-Ql-rYb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ofa-Gp-dmo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7gN-I9-uGX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="90.401785714285708"/>
+        </scene>
+        <!--LoginView-->
+        <scene sceneID="kuc-P4-zAV">
+            <objects>
+                <viewController title="LoginView" id="KNN-3k-iVL" customClass="LoginViewController" customModule="SummerChat_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Gm-jy-ztB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="EDH-Gv-CXB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bse-OZ-UOW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zk4-Wi-uBS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2168" y="802"/>
+        </scene>
+        <!--RegisterView-->
+        <scene sceneID="NBA-ar-hVf">
+            <objects>
+                <viewController title="RegisterView" id="Veh-Op-hYs" customClass="RegisterViewController" customModule="SummerChat_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ttw-d4-iWo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CYh-eo-XRl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bRp-Qn-nIh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTP-9h-Stm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2200" y="-403.125"/>
+        </scene>
+        <!--ChatView-->
+        <scene sceneID="TCI-XI-foM">
+            <objects>
+                <viewController title="ChatView" id="qoI-sT-gSt" customClass="ChatViewController" customModule="SummerChat_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ezi-sA-6xN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="coQ-ZD-Jxo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Pq-0k-ssh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3597.1014492753625" y="128.57142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ra5-Ue-vEs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4BX-AO-h6W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8zn-U8-RG2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6oB-9T-4dv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VaI-5P-vYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="90.401785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat" width="1920" height="1920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
