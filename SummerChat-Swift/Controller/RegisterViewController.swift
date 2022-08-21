@@ -8,17 +8,17 @@
 import UIKit
 import FirebaseAuth
 class RegisterViewController: UIViewController {
-     // MARK: - Properties
+    // MARK: - Properties
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-     // MARK: - LifeCycle
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
     }
     
- // MARK: - Action
+    // MARK: - Action
     @IBAction func registerButton(_ sender: UIButton) {
         if let email = emailTextField.text, let password = passwordTextField.text{
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
@@ -33,7 +33,7 @@ class RegisterViewController: UIViewController {
     }
     
 }
- // MARK: - Helpers
+// MARK: - Helpers
 extension RegisterViewController{
     private func style(){
         navigationController?.navigationBar.tintColor = .white

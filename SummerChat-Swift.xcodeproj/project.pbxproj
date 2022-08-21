@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		94BE6BDECB138A0BF330567E /* Pods_SummerChat_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B94D15F4877B7FC2BA4DB83 /* Pods_SummerChat_Swift.framework */; };
+		C428CEBF28B205880063A644 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C428CEBE28B205880063A644 /* Constants.swift */; };
 		C45BA3F128ABCA9300D57EB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45BA3F028ABCA9300D57EB5 /* AppDelegate.swift */; };
 		C45BA3F328ABCA9300D57EB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45BA3F228ABCA9300D57EB5 /* SceneDelegate.swift */; };
 		C45BA3F828ABCA9300D57EB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45BA3F628ABCA9300D57EB5 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		3B94D15F4877B7FC2BA4DB83 /* Pods_SummerChat_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SummerChat_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C428CEBE28B205880063A644 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C45BA3ED28ABCA9300D57EB5 /* SummerChat-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SummerChat-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45BA3F028ABCA9300D57EB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C45BA3F228ABCA9300D57EB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				C45BA40428ABCAE000D57EB5 /* Controller */,
 				C4B7CABD28ABCC64002C68EE /* Views */,
 				C4B7CAC028ABCE7D002C68EE /* Files */,
+				C428CEBE28B205880063A644 /* Constants.swift */,
 			);
 			path = "SummerChat-Swift";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				C4D5052C28B1F5AC009F803D /* AlertHelper.swift in Sources */,
 				C45BA40C28ABCB1C00D57EB5 /* ChatViewController.swift in Sources */,
 				C45BA3F328ABCA9300D57EB5 /* SceneDelegate.swift in Sources */,
+				C428CEBF28B205880063A644 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

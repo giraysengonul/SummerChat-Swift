@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ChatViewController: UIViewController {
     @IBOutlet weak var messageTextField: UITextField!
@@ -14,15 +15,30 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.barStyle = .black
-        // Do any additional setup after loading the view.
+        style()
     }
     
-
+    
     @IBAction func logOut(_ sender: UIBarButtonItem) {
+        do{
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+        }catch let error as NSError{
+            let alert = AlertHelper.alert(withMessage: error.localizedDescription)
+            present(alert, animated: true)
+        }
     }
     
     @IBAction func sendButton(_ sender: UIButton) {
+        
+    }
+}
+// MARK: - Helpers
+extension ChatViewController{
+    private func style(){
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.barStyle = .black
+        navigationItem.hidesBackButton = true
+        navigationItem.title = "Summer Chat"
     }
 }

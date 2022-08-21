@@ -17,13 +17,13 @@ class LoginViewController: UIViewController {
         style()
     }
     
-
-
+    
+    
     @IBAction func loginButton(_ sender: UIButton) {
         if let email = emailTextField.text, let password = passwordTextField.text{
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
                 if error != nil{
-                  let alert =  AlertHelper.alert(withMessage: error!.localizedDescription)
+                    let alert =  AlertHelper.alert(withMessage: error!.localizedDescription)
                     self.present(alert, animated: true)
                 }else{
                     self.performSegue(withIdentifier: "LoginToChat", sender: self)
@@ -32,10 +32,10 @@ class LoginViewController: UIViewController {
         }
     }
     
-
+    
 }
 
- // MARK: - Helpers
+// MARK: - Helpers
 extension LoginViewController{
     private func style(){
         navigationController?.navigationBar.tintColor = .white
