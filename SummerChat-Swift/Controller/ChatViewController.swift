@@ -14,11 +14,14 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.barStyle = .black
         // Do any additional setup after loading the view.
     }
     
 
+    @IBAction func logOut(_ sender: UIBarButtonItem) {
+    }
     
     @IBAction func sendButton(_ sender: UIButton) {
     }
