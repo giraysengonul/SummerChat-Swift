@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="70" id="KGk-i7-Jjw" customClass="MessageCell" customModule="SummerChat_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="274" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="274" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="P51-gx-G9r">
+                        <rect key="frame" x="10" y="10" width="254" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lkn-hb-pSf">
+                                <rect key="frame" x="0.0" y="0.0" width="194" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xuz-wE-2Qu">
+                                        <rect key="frame" x="10" y="10" width="174" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstItem="Xuz-wE-2Qu" firstAttribute="top" secondItem="lkn-hb-pSf" secondAttribute="top" constant="10" id="Uku-GJ-58e"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xuz-wE-2Qu" secondAttribute="bottom" constant="10" id="e89-t9-wLF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xuz-wE-2Qu" secondAttribute="trailing" constant="10" id="n6O-QK-DRu"/>
+                                    <constraint firstItem="Xuz-wE-2Qu" firstAttribute="leading" secondItem="lkn-hb-pSf" secondAttribute="leading" constant="10" id="v0P-yk-q44"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="m.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MJT-Sn-TDS">
+                                <rect key="frame" x="214" y="0.5" width="40" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="2HA-gw-XLn"/>
+                                    <constraint firstAttribute="height" constant="40" id="qK2-I8-5Jn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="P51-gx-G9r" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="FRP-Uz-bcP"/>
+                    <constraint firstItem="P51-gx-G9r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="QW6-nY-PC0"/>
+                    <constraint firstAttribute="trailing" secondItem="P51-gx-G9r" secondAttribute="trailing" constant="10" id="k4y-CI-hPR"/>
+                    <constraint firstAttribute="bottom" secondItem="P51-gx-G9r" secondAttribute="bottom" constant="10" id="sc4-1S-SId"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="Xuz-wE-2Qu" id="NJO-pr-CTo"/>
+                <outlet property="messageBubble" destination="lkn-hb-pSf" id="4xL-kd-blO"/>
+                <outlet property="rightImageView" destination="MJT-Sn-TDS" id="qM1-GI-3fK"/>
+            </connections>
+            <point key="canvasLocation" x="97.101449275362327" y="106.47321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="m.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -10,6 +10,8 @@
 		94BE6BDECB138A0BF330567E /* Pods_SummerChat_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B94D15F4877B7FC2BA4DB83 /* Pods_SummerChat_Swift.framework */; };
 		C428CEBF28B205880063A644 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C428CEBE28B205880063A644 /* Constants.swift */; };
 		C42E8CC928B9545B00183629 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42E8CC828B9545B00183629 /* Message.swift */; };
+		C42E8CCC28B959B400183629 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42E8CCA28B959B400183629 /* MessageCell.swift */; };
+		C42E8CCD28B959B400183629 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C42E8CCB28B959B400183629 /* MessageCell.xib */; };
 		C45BA3F128ABCA9300D57EB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45BA3F028ABCA9300D57EB5 /* AppDelegate.swift */; };
 		C45BA3F328ABCA9300D57EB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45BA3F228ABCA9300D57EB5 /* SceneDelegate.swift */; };
 		C45BA3F828ABCA9300D57EB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45BA3F628ABCA9300D57EB5 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 		3B94D15F4877B7FC2BA4DB83 /* Pods_SummerChat_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SummerChat_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C428CEBE28B205880063A644 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C42E8CC828B9545B00183629 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		C42E8CCA28B959B400183629 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		C42E8CCB28B959B400183629 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		C45BA3ED28ABCA9300D57EB5 /* SummerChat-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SummerChat-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45BA3F028ABCA9300D57EB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C45BA3F228ABCA9300D57EB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				C45BA3F628ABCA9300D57EB5 /* Main.storyboard */,
+				C42E8CCA28B959B400183629 /* MessageCell.swift */,
+				C42E8CCB28B959B400183629 /* MessageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42E8CCD28B959B400183629 /* MessageCell.xib in Resources */,
 				C45BA3FD28ABCA9500D57EB5 /* LaunchScreen.storyboard in Resources */,
 				C4DC77D128B175A200BCF866 /* GoogleService-Info.plist in Resources */,
 				C45BA3FA28ABCA9500D57EB5 /* Assets.xcassets in Resources */,
@@ -269,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45BA40828ABCB0400D57EB5 /* LoginViewController.swift in Sources */,
+				C42E8CCC28B959B400183629 /* MessageCell.swift in Sources */,
 				C45BA40A28ABCB1100D57EB5 /* RegisterViewController.swift in Sources */,
 				C45BA40628ABCAF900D57EB5 /* WelcomeViewController.swift in Sources */,
 				C42E8CC928B9545B00183629 /* Message.swift in Sources */,
