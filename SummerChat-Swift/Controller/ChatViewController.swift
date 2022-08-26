@@ -9,10 +9,16 @@ import UIKit
 import FirebaseAuth
 
 class ChatViewController: UIViewController {
+    // MARK: - Properties
     @IBOutlet weak var messageTextField: UITextField!
-    
     @IBOutlet weak var tableView: UITableView!
-    
+    var message:[Message] = [
+        Message(sender: "1@gmail.com", body: "Hello!!"),
+        Message(sender: "2@gmail.com", body: "Hello!!"),
+        Message(sender: "3@gmail.com", body: "Hello!!"),
+        Message(sender: "4@gmail.com", body: "Hello!!")
+    ]
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
@@ -40,5 +46,24 @@ extension ChatViewController{
         navigationController?.navigationBar.barStyle = .black
         navigationItem.hidesBackButton = true
         navigationItem.title = "Summer Chat"
+        //tableView
+        tableView.delegate = self
+        tableView.dataSource = self
+        
     }
+}
+// MARK: - TableView Delegate and DataSource
+extension ChatViewController: UITableViewDelegate, UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return message.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
+        cell.textLabel?.text = "selam"
+        return cell
+    }
+    
 }
